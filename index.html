@@ -1,0 +1,569 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="script.js" defer></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js" defer></script>
+  </head>
+
+  <body>
+
+    <div class="sonylogobar">
+      <div class="sonylogo">
+        <img src="images/sonylogo.jpg" alt="LOGO OF SONY" />
+      </div>
+    </div>
+
+    <div class="nav-bar">
+      <section class="leftnavbar">
+        <img src="images/playstationlogo.svg" />
+        <a href="#">Games <span class="material-symbols-outlined">expand_more</span> </a>
+        <a href="#">Hardware <span class="material-symbols-outlined">expand_more</span> </a>
+        <a href="#">Services <span class="material-symbols-outlined">expand_more</span> </a>
+        <a href="#">Shop <span class="material-symbols-outlined">expand_more</span> </a>
+        <a href="#">Support <span class="material-symbols-outlined">expand_more</span> </a>
+      </section>
+
+      <section class="rightnavbar">
+        <a href="#">Games</a>
+        <a href="#">Hardware</a>
+      </section>
+    </div>
+    
+    <!-- PS games------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+    <div class="slideshowcontainer">
+      <section id="ps5discount" class="fade-in gameimage">
+        <div></div>
+      </section>
+      
+
+      <section id="winter" class="fade-in gameimage">
+        <div></div>
+      </section>
+      <section id="great2023" class="fade-in gameimage">
+        <div></div>
+      </section>
+      <section id="firewall" class="fade-in gameimage">
+        <div></div>
+      </section>
+      <section id="granturismo" class="fade-in gameimage">
+        <div></div>
+      </section>
+      <section id="venom" class="fade-in gameimage">
+        <div></div>
+      </section>
+    </div>
+    <div class="pickimage">
+      <div onclick="showslidegames(1)"><img src="images/firstslideshow/ps5-promotion-wave-2-keyart-01-en-14jul23.webp" ></div>
+      <div onclick="showslidegames(2)"><img src="images/firstslideshow/summer-sale-keyart-01-10jul23$en-in.webp"></div>
+      <div onclick="showslidegames(3)"><img src="images/firstslideshow/21-games-keyart-01-07jun23$en (1).webp"></div>
+      <div onclick="showslidegames(4)"><img src="images/firstslideshow/firewall-ultra-digital-deluxe-keyart-01-14jul23$en.webp"></div>
+      <div onclick="showslidegames(5)"><img src="images/firstslideshow/GranTurismo-DOM-Keyart-01-18jul23$en.webp"></div>
+      <div onclick="showslidegames(6)"><img src="images/firstslideshow/spider-man-2-story-trailer-keyart-01-en-18jul23.webp"></div>
+      
+    </div>
+
+    <!-- PS accessories------------------------------------------------------------------------------------------------------------------------------------------------>
+
+    <div class="gridcontainer accessories">
+      <div class="ps5 fade-in">
+        <h3>Playstation 5</h3>
+        <p>Experience an all-new generation of incredible PlayStation games. PS5 consoles are currently in stock.</p>
+      </div>
+      <div class="ps5 fade-in">
+        <img src="images/console-accessoroes/playstation-5-img.jpg">
+      </div>
+
+      <div class="ds fade-in">
+        <h3>Dualsense Edge Wireless Controller</h3>
+        <p>Get an edge in gameplay with remappable buttons, tunable triggers and sticks, changeable stick caps, back buttons, and more.</p>
+      </div>
+      <div class="ds fade-in">
+        <img src="images/console-accessoroes/dualsense-collection-image-block-01-en-01sep22.webp">
+      </div>
+
+      <div class="pulse fade-in">
+        <h3>Dualsense Edge Wireless Controller</h3>
+        <p>Get an edge in gameplay with remappable buttons, tunable triggers and sticks, changeable stick caps, back buttons, and more.</p>
+      </div>
+      <div class="pulse fade-in">
+        <img src="images/console-accessoroes/3d-pulse-headset-range-image-block-03-en-13sep22.webp">
+      </div>
+
+      <div class="dsedge fade-in">
+        <h3>Dualsense Edge Wireless Controller</h3>
+        <p>Get an edge in gameplay with remappable buttons, tunable triggers and sticks, changeable stick caps, back buttons, and more.</p>
+      </div>
+      <div class="dsedge fade-in">
+        <img src="images/console-accessoroes/dual-sense-edge.webp">
+      </div>
+
+      <div class="media fade-in">
+        <h3>Dualsense Edge Wireless Controller</h3>
+        <p>Get an edge in gameplay with remappable buttons, tunable triggers and sticks, changeable stick caps, back buttons, and more.</p>
+      </div>
+      <div class="media fade-in">
+        <img src="images/console-accessoroes/Media-Remote-square-image-block-ps5-01-en-09oct20.webp">
+      </div>
+
+      <div class="camera fade-in">
+        <h3>Dualsense Edge Wireless Controller</h3>
+        <p>Get an edge in gameplay with remappable buttons, tunable triggers and sticks, changeable stick caps, back buttons, and more.</p>
+      </div>
+      <div class="camera fade-in">
+        <img src="images/console-accessoroes/hd-camera-square-image-block-ps5-01-en-07dec20.webp">
+      </div>
+    </div>
+
+    <div class="pickimage">
+      <div class="pickimageitem">
+        <div onclick="showslideaccs(1)"><img src="images/console-accessoroes/playstation-5-img.jpg" ></div>
+        <p style="font-size: 16px;">PS5 Console</p>
+      </div>
+      <div class="pickimageitem">
+        <div onclick="showslideaccs(2)"><img src="images/console-accessoroes/dualsense-collection-image-block-01-en-01sep22.webp" ></div>
+        <p style="font-size: 16px;">DualSense™ Wireless Controller</p>
+      </div>
+      <div class="pickimageitem">
+        <div onclick="showslideaccs(3)"><img src="images/console-accessoroes/3d-pulse-headset-range-image-block-03-en-13sep22.webp" ></div>
+        <p style="font-size: 16px;">PULSE 3D™ Wireless Headset</p>
+      </div>
+      <div class="pickimageitem">
+        <div onclick="showslideaccs(4)"><img src="images/console-accessoroes/DualSense-Edge-image-block-01-en-24aug22.webp"></div>
+        <p style="font-size: 16px;">DualSense Edge</p>
+      </div>
+      <div class="pickimageitem">
+        <div onclick="showslideaccs(5)"><img src="images/console-accessoroes/Media-Remote-square-image-block-ps5-01-en-09oct20.webp" ></div>
+        <p style="font-size: 16px;">Media Remotes Controller</p>
+      </div>
+      <div class="pickimageitem">
+        <div onclick="showslideaccs(6)"><img src="images/console-accessoroes/hd-camera-square-image-block-ps5-01-en-07dec20.webp" ></div>
+        <p style="font-size: 16px;">HD Camera</p>
+      </div>
+      
+      
+      
+      
+      
+    </div>
+
+    <!-- PSPLUS------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+    <section id="psplus">
+      <div class="gridcontainer">
+        <div class="fade-in">
+          <img id="badges" src="images/ps-plus-black-badge@2x.webp">
+          <p>Enhance your PlayStation experience with access to online multiplayer, monthly games, exclusive discounts and more.</p>
+        </div>
+        <div class="fade-in">
+          <img id="psplusfeatured" src="images/ps-plus-jul-monthly-games-featured-image-block-01-28jun23$en.webp">
+        </div>
+      </div>
+    </section>
+
+    <!-- PS VR2------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+    <section id="psvr2" class="fade-in">
+      <div class="gridcontainer" style="color: white;">
+        <div>
+          <h3>Feel a New Real</h3>
+          <p>Immerse yourself in epic worlds that go beyond reality, with the groundbreaking Playstation VR2 headset and Playstation VR2 Sense Controller</p>
+        </div>
+        
+      </div>
+      
+    </section>
+
+    <!-- THIS MONTH ON PLAYSTATION----------------------------------------------------------------------------------------------------------------------------------->
+
+    <section class="fade-in">
+      <div id="ff16"  style="color:white">
+        <div >
+          <div class="floating">
+            <h3 style="margin-bottom: 0;">THIS MONTH</h3>
+            <h3 style="font-weight: bold; margin:0;">ON PLAYSTATION</h3>
+            <p>Check out this month's biggest releases along with dedicated features, guides and more.</p>
+            <div style="text-align: left;">
+              <span class="button" style="background: white; color: black;">Find out more</span>
+            </div>
+          </div>
+          
+          <div class="contentgrid">
+            <div> <!-- grid 1-->
+              <img src="images/contetngriditem (1).webp">
+              <h4>21 great games you might have missed 2023</h4>
+            </div>
+            <div> <!-- grid 1-->
+              <img src="images/contetngriditem (2).webp">
+              <h4>The best fighting games on ps4 and ps5</h4>
+            </div>
+            <div> <!-- grid 1-->
+              <img src="images/contetngriditem (3).webp">
+              <h4>Best single-player story driven games on PS4 AND PS5</h4>
+            </div>
+
+          </div>
+        </div>
+        
+      </div>
+      <div id="ff16belowbg">
+
+      </div>
+
+    </section>
+
+    <!-- GOW:RAGNAROK---------------------------------------------------------------------------------------------------------------------------------------------------->
+
+    <section id="gow" class="fade-in">
+      <div class="gridcontainer" style="color: white;">
+        <div>
+          <img id="badges" src="images/gow-ragnorok logo.webp" style="height: 100px ; width:auto">
+          <h3>The Norse Saga continues</h3>
+          <p>Embark on an epic and heartfelt journey as Kratos and Atreus struggle with holding on and letting go, available now on PS4 and PS5</p>
+          <div style="text-align: left;">
+            <span class="button" style="background: orangered; color: white;"> Buy Now</span>
+          </div>
+        </div>
+        
+      </div>
+      
+    </section>
+
+    <!-- AVAILABLE NOW---------------------------------------------------------------------------------------------------------------------------------------------------->
+
+    <section id="availablenow" class="fade-in">
+      <div>
+        <h3 style="text-align: center; color:white; padding:20px 0px; font-size: calc(1rem*2.4); margin: 0%;">Great PS4 and PS5 games available now</h3>
+      </div>
+      
+      <div class="carousel" style="transform: translateX(0%);">
+        
+        <!-- <div class="carousel-cell">
+          <img src="images/Great-PS4-and-PS5-games/lastofus.webp">
+          <p style="font-size:12px; color:white;">
+            The Last of Us Part 1 Firefly Edition
+          </p>
+        </div>
+        
+        <div class="carousel-cell">
+          <img src="images/Great-PS4-and-PS5-games/nba.avif">
+          <p style="font-size:12px; color:white;">
+            Discover more great sports gamesExplore a range of incredible sports games out now or coming soon to PS4 and PS5.
+          </p>
+        </div>
+        
+        <div class="carousel-cell">
+          <img src="images/Great-PS4-and-PS5-games/avatar.avif">
+          <p style="font-size:12px; color:white;">
+            The Last of Us Part 1 Firefly Edition
+          </p>
+        </div>
+        
+        <div class="carousel-cell">
+          <img src="images/Great-PS4-and-PS5-games/baldur.avif">
+          <p style="font-size:12px; color:white;">
+            The Last of Us Part 1 Firefly Edition
+          </p>
+        </div>
+        
+        <div class="carousel-cell">
+          <img src="images/Great-PS4-and-PS5-games/jsutdance22.webp">
+          <p style="font-size:12px; color:white;">
+            Gotta dance on em
+          </p>
+        </div> -->
+
+        <!--Carousel starts from here-->
+        <div class="carousel-cell">
+          <img src="images/Great-PS4-and-PS5-games/spiderman2.avif">
+          <p style="font-size:12px; color:white;">
+            Marvel's Spider-Man 2 is the next game in PlayStation’s critically acclaimed Marvel’s Spider-Man franchise. Developed by Insomniac Games for the PlayStation 5 console in collaboration with PlayStat... 
+          </p>  
+          </div>
+        
+        <div class="carousel-cell">
+          <img src="images/Great-PS4-and-PS5-games/ff6.webp">
+          <p style="font-size:12px; color:white;">
+            The 16th standalone entry in the legendary Final Fantasy series marks a darker turn for the RPG franchise, with a complex tale of revenge, power struggles and unavoidable tragedy. 
+          </p>
+        </div>
+        
+        <div class="carousel-cell">
+          <img src="images/Great-PS4-and-PS5-games/lastofus.webp">
+          <p style="font-size:12px; color:white;">
+            The Last of Us Part 1 Firefly Edition
+          </p>
+        </div>
+        
+        <div class="carousel-cell">
+          <img src="images/Great-PS4-and-PS5-games/nba.avif">
+          <p style="font-size:12px; color:white;">
+            Discover more great sports gamesExplore a range of incredible sports games out now or coming soon to PS4 and PS5.
+          </p>
+        </div>
+        
+        <div class="carousel-cell">
+          <img src="images/Great-PS4-and-PS5-games/avatar.avif">
+          <p style="font-size:12px; color:white;">
+            The Last of Us Part 1 Firefly Edition
+          </p>
+        </div>
+        
+        <div class="carousel-cell">
+          <img src="images/Great-PS4-and-PS5-games/baldur.avif">
+          <p style="font-size:12px; color:white;">
+            The Last of Us Part 1 Firefly Edition
+          </p>
+        </div>
+        
+        <div class="carousel-cell">
+          <img src="images/Great-PS4-and-PS5-games/jsutdance22.webp">
+          <p style="font-size:12px; color:white;">
+            Gotta dance on em
+          </p>
+        </div>
+      
+        
+        <!--Carousel ends from here-->
+      </div> 
+  
+      <div class="arrows left" onclick="previous()"></div>
+      <div class="arrows right" onclick="next()"></div>
+  
+    </section>
+
+    <!-- WHAT ARE YOU PLAYING NOW?--------------------------------------------------------------------------------------------------------------------------------------->
+
+    <section id="whatplay" class="fade-in">
+      <div>
+        <h3 style="text-align: center; padding:20px 0px; font-size: calc(1rem*2.4); margin: 0%;">What are you playing?</h3>
+        <p style="text-align: center;">Show us which PlayStation games & accessories you're enjoying. Tag your Instagram posts with #PSshare for a chance to be included.</p>
+      </div>
+
+      <div style="width:90%; margin-left: auto; margin-right: auto; overflow: hidden; ">
+
+        <div class="carousel">
+          <div>
+            <picture >
+              <source sizes="382.5px" srcset="https://edge.curalate.com/v1/img/n8JetMy8JpAn5iOCQfNYLjOND6SUYpDjGz2rDx2hhOE=/sc/150x150?typ=webp 150w,https://edge.curalate.com/v1/img/n8JetMy8JpAn5iOCQfNYLjOND6SUYpDjGz2rDx2hhOE=/sc/300x300?typ=webp 300w,https://edge.curalate.com/v1/img/n8JetMy8JpAn5iOCQfNYLjOND6SUYpDjGz2rDx2hhOE=/sc/450x450?typ=webp 450w,https://edge.curalate.com/v1/img/n8JetMy8JpAn5iOCQfNYLjOND6SUYpDjGz2rDx2hhOE=/sc/600x600?typ=webp 600w" type="image/webp">
+              <source sizes="382.5px" srcset="https://edge.curalate.com/v1/img/n8JetMy8JpAn5iOCQfNYLjOND6SUYpDjGz2rDx2hhOE=/sc/150x150? 150w,https://edge.curalate.com/v1/img/n8JetMy8JpAn5iOCQfNYLjOND6SUYpDjGz2rDx2hhOE=/sc/300x300? 300w,https://edge.curalate.com/v1/img/n8JetMy8JpAn5iOCQfNYLjOND6SUYpDjGz2rDx2hhOE=/sc/450x450? 450w,https://edge.curalate.com/v1/img/n8JetMy8JpAn5iOCQfNYLjOND6SUYpDjGz2rDx2hhOE=/sc/600x600? 600w">
+              <img alt="@davidcarlos1975's instagram image: ~Werbung/unbeauftragt/unbezahlt~ Neues Zubehör für meine Pla⁠..." class="sc-11g44w5-0 jMmuga" height="382px" src="https://edge.curalate.com/sites/default/experiences/carousel/assets/imagePlaceholder.png" width="382.5" data-di-id="186d285f-25cfa638">
+            </picture>
+          </div>
+  
+          <div>
+            <picture class="vopj6d-0 ihfaVr"><source sizes="382.5px" srcset="https://edge.curalate.com/v1/img/RYhe56VGmQ7rvP3dt_f1qcqBctw0LNcC4vY2aSXLKkk=/sc/150x150?typ=webp 150w,https://edge.curalate.com/v1/img/RYhe56VGmQ7rvP3dt_f1qcqBctw0LNcC4vY2aSXLKkk=/sc/300x300?typ=webp 300w,https://edge.curalate.com/v1/img/RYhe56VGmQ7rvP3dt_f1qcqBctw0LNcC4vY2aSXLKkk=/sc/450x450?typ=webp 450w,https://edge.curalate.com/v1/img/RYhe56VGmQ7rvP3dt_f1qcqBctw0LNcC4vY2aSXLKkk=/sc/600x600?typ=webp 600w" type="image/webp">
+              <source sizes="382.5px" srcset="https://edge.curalate.com/v1/img/RYhe56VGmQ7rvP3dt_f1qcqBctw0LNcC4vY2aSXLKkk=/sc/150x150? 150w,https://edge.curalate.com/v1/img/RYhe56VGmQ7rvP3dt_f1qcqBctw0LNcC4vY2aSXLKkk=/sc/300x300? 300w,https://edge.curalate.com/v1/img/RYhe56VGmQ7rvP3dt_f1qcqBctw0LNcC4vY2aSXLKkk=/sc/450x450? 450w,https://edge.curalate.com/v1/img/RYhe56VGmQ7rvP3dt_f1qcqBctw0LNcC4vY2aSXLKkk=/sc/600x600? 600w">
+              <img alt="@adventuresinphotomode's instagram image: Gran Turismo 7 | Polyphony Digital | PlayStation 5.•⁠..." class="sc-11g44w5-0 jMmuga" height="382" src="https://edge.curalate.com/sites/default/experiences/carousel/assets/imagePlaceholder.png" width="382.5" data-di-id="186d285f-25cfa638">
+            </picture>
+          </div>
+  
+          <div>
+            <picture class="vopj6d-0 ihfaVr"><source sizes="382.5px" srcset="https://edge.curalate.com/v1/img/J9MdRiMlYRevClV2U1IaB2KfwbjH8IAyJUTUOvrkCZE=/sc/150x150?typ=webp 150w,https://edge.curalate.com/v1/img/J9MdRiMlYRevClV2U1IaB2KfwbjH8IAyJUTUOvrkCZE=/sc/300x300?typ=webp 300w,https://edge.curalate.com/v1/img/J9MdRiMlYRevClV2U1IaB2KfwbjH8IAyJUTUOvrkCZE=/sc/450x450?typ=webp 450w,https://edge.curalate.com/v1/img/J9MdRiMlYRevClV2U1IaB2KfwbjH8IAyJUTUOvrkCZE=/sc/600x600?typ=webp 600w" type="image/webp">
+              <source sizes="382.5px" srcset="https://edge.curalate.com/v1/img/J9MdRiMlYRevClV2U1IaB2KfwbjH8IAyJUTUOvrkCZE=/sc/150x150? 150w,https://edge.curalate.com/v1/img/J9MdRiMlYRevClV2U1IaB2KfwbjH8IAyJUTUOvrkCZE=/sc/300x300? 300w,https://edge.curalate.com/v1/img/J9MdRiMlYRevClV2U1IaB2KfwbjH8IAyJUTUOvrkCZE=/sc/450x450? 450w,https://edge.curalate.com/v1/img/J9MdRiMlYRevClV2U1IaB2KfwbjH8IAyJUTUOvrkCZE=/sc/600x600? 600w">
+              <img alt="@darkmatrixzero's instagram image: 🌿𝙒𝙞𝙡𝙡 𝙔𝙤𝙪 𝘼𝙣𝙨𝙬𝙚𝙧 𝙏𝙝𝙚 𝘾𝙖𝙡𝙡🍁🇬🇧/🇺🇸⬇️⁠..." class="sc-11g44w5-0 jMmuga" height="382" src="https://edge.curalate.com/sites/default/experiences/carousel/assets/imagePlaceholder.png" width="382.5" data-di-id="186d285f-25cfa638">
+            </picture>
+          </div>
+  
+          <div>
+            <picture class="vopj6d-0 ihfaVr">
+              <source sizes="382.5px" srcset="https://edge.curalate.com/v1/img/3skUvP1wTiAPEz_Fid30BT3lWoiUrkyrOpolUbTujVg=/sc/150x150?typ=webp 150w,https://edge.curalate.com/v1/img/3skUvP1wTiAPEz_Fid30BT3lWoiUrkyrOpolUbTujVg=/sc/300x300?typ=webp 300w,https://edge.curalate.com/v1/img/3skUvP1wTiAPEz_Fid30BT3lWoiUrkyrOpolUbTujVg=/sc/450x450?typ=webp 450w,https://edge.curalate.com/v1/img/3skUvP1wTiAPEz_Fid30BT3lWoiUrkyrOpolUbTujVg=/sc/600x600?typ=webp 600w" type="image/webp">
+              <source sizes="382.5px" srcset="https://edge.curalate.com/v1/img/3skUvP1wTiAPEz_Fid30BT3lWoiUrkyrOpolUbTujVg=/sc/150x150? 150w,https://edge.curalate.com/v1/img/3skUvP1wTiAPEz_Fid30BT3lWoiUrkyrOpolUbTujVg=/sc/300x300? 300w,https://edge.curalate.com/v1/img/3skUvP1wTiAPEz_Fid30BT3lWoiUrkyrOpolUbTujVg=/sc/450x450? 450w,https://edge.curalate.com/v1/img/3skUvP1wTiAPEz_Fid30BT3lWoiUrkyrOpolUbTujVg=/sc/600x600? 600w">
+              <img alt="@1oad3r's instagram image: PSVR2 controller design appreciation. Sony makes some beautiful and t⁠..." class="sc-11g44w5-0 jMmuga" height="382" src="https://edge.curalate.com/sites/default/experiences/carousel/assets/imagePlaceholder.png" width="382.5" data-di-id="186d285f-25cfa638">
+            </picture>
+          </div>
+  
+          <div>
+            <picture class="vopj6d-0 ihfaVr">
+              <source sizes="382.5px" srcset="https://edge.curalate.com/v1/img/EptZMa6QlCnlo_OEkg7k4ccW1dc4FfBrBuvJ1BYwr9A=/sc/150x150?typ=webp 150w,https://edge.curalate.com/v1/img/EptZMa6QlCnlo_OEkg7k4ccW1dc4FfBrBuvJ1BYwr9A=/sc/300x300?typ=webp 300w,https://edge.curalate.com/v1/img/EptZMa6QlCnlo_OEkg7k4ccW1dc4FfBrBuvJ1BYwr9A=/sc/450x450?typ=webp 450w,https://edge.curalate.com/v1/img/EptZMa6QlCnlo_OEkg7k4ccW1dc4FfBrBuvJ1BYwr9A=/sc/600x600?typ=webp 600w" type="image/webp">
+              <source sizes="382.5px" srcset="https://edge.curalate.com/v1/img/EptZMa6QlCnlo_OEkg7k4ccW1dc4FfBrBuvJ1BYwr9A=/sc/150x150? 150w,https://edge.curalate.com/v1/img/EptZMa6QlCnlo_OEkg7k4ccW1dc4FfBrBuvJ1BYwr9A=/sc/300x300? 300w,https://edge.curalate.com/v1/img/EptZMa6QlCnlo_OEkg7k4ccW1dc4FfBrBuvJ1BYwr9A=/sc/450x450? 450w,https://edge.curalate.com/v1/img/EptZMa6QlCnlo_OEkg7k4ccW1dc4FfBrBuvJ1BYwr9A=/sc/600x600? 600w">
+              <img alt="@ordaude_lotageek's instagram image: Je pense que notre Yumi a bien aimé sa dernière partie de j⁠..." class="sc-11g44w5-0 jMmuga" height="382" src="https://edge.curalate.com/sites/default/experiences/carousel/assets/imagePlaceholder.png" width="382.5" data-di-id="186d285f-25cfa638">
+            </picture>
+          </div>
+          
+          <div>
+  
+          </div>
+        </div> 
+      </div> 
+    </section>
+
+    <!-- EXPLORE PLAYSTATION 4--------------------------------------------------------------------------------------------------------------------------------------->
+
+    <section class="fade-in">
+      <div>
+        <h3 style="text-align: center; padding:20px 0px; font-size: calc(1rem*2.4); margin: 0%;">Explore PlayStation®4</h3>
+        <p style="text-align: center;">Incredible games, non-stop entertainment. There's never been a better time to enjoy PS4.</p>
+      
+      <div>
+        <div id="exploreps4">
+          <div>
+            <img src="images/ExplorePS4/ps4-slim-.webp">
+            <p>Incredible games live on PS4, with 1TB storage</p>
+  
+          </div>
+          <div>
+            <img src="images/ExplorePS4/psvr.webp">
+            <p>Over 100 games and experiences counting. See them all.</p>
+            
+  
+          </div>
+          <div>
+            <img src="images/ExplorePS4/dualshock-4-.webp">
+            <p>Enhance your PS4 experience with a range of official accessories.</p>
+  
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- MERCHANDISE--------------------------------------------------------------------------------------------------------------------------------------->
+    <section id="merchandise">
+      <div style="color: white; padding-left: 10vw; width:40vw;">
+        <img id="logoimg" src="images/Merchandise/ps-gear-blue-icon.webp">
+        <h3> PlayStation official licensed apparel and merchandise</h3>
+        <p> Browse the PlayStation Gear store for official accessories, collectibles, clothing and more</p>
+      </div>
+      
+      <div id="psgear">
+        <div class="gear">
+          <img src="images/Merchandise/ps-gear-ps-heritage-zipup-hoodie-image-block-01-en-26may22.webp">
+          <p>PlayStation™ Heritage Zip Up Hoodie</p>
+          <div style="text-align: center;">
+            <span class="button">Shop now</span>
+          </div>
+        </div>
+
+        <div class="gear">
+          <img src="images/Merchandise/ps-gear-ps-heritage-t-shirt-image-block-01-en-14apr23.webp">
+          <p>PlayStation™ Taped-Up T-shirt</p>
+          <div style="text-align: center;">
+            <span class="button">Shop now</span>
+          </div>
+        </div>
+
+        <div class="gear">
+          <img src="images/Merchandise/ps-gear-ps-brand-hat-image-block-01-en-14apr23.webp">
+          <p>PlayStation™ Symbols Hat</p>
+          <div style="text-align: center;">
+            <span class="button">Shop now</span>
+          </div>
+          
+        </div>
+
+        <div class="gear">
+          <img src="images/Merchandise/ps-gear-ps-heritage-water-bottle-image-block-01-en-14apr23.webp">
+          <p>Heritage Hardware 32 oz Bottle with Straw Lid</p>
+          <div style="text-align: center;">
+            <span class="button">Shop now</span>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; padding:5vw;">
+        <span class="button" style="background: white; color: black;"> Shop the Collection</span>
+      </div>
+      
+    </section>
+
+    <!-- FOLLOW--------------------------------------------------------------------------------------------------------------------------------------->
+
+    <section id="follow">
+      <h3 style="text-align: center; padding:20px 0px; font-size: calc(1rem*2.4); margin: 0%;">Follow us on social media</h3>
+      <div>
+        <img src="images/social media/twitter-monochrome-icon-01-en-13may21.webp">
+        <img src="images/social media/facebook-monochrome-icon-01-en-13may21.webp">
+        <img src="images/social media/instagram-monochrome-icon-01-en-13may21.webp">
+        <img src="images/social media/youtube-monochrome-icon-01-en-13may21.webp"> 
+      </div>
+    </section>
+
+    <!-- FOOTER--------------------------------------------------------------------------------------------------------------------------------------->
+    
+    <footer>
+      <div id="footerid">
+        <div style="border-bottom-width: 1px; border-bottom-color:white; border-bottom-style:solid ;">
+          <img src="images/pslogo footer.jpeg" style="height:128px; ">
+        </div>
+        <div class="footergrid" style="border-bottom-width: 1px; border-bottom-color:white; border-bottom-style:solid ;">
+          <div>
+            <ul>
+              <li style="font-weight: bold;">About</li>
+              <li>About SIE</li>
+              <li>Careers</li>
+              <li>Playstation Studios</li>
+              <li>Corporate</li>
+            </ul>
+          </div>
+  
+          <div>
+            <ul>
+              <li style="font-weight: bold;">Products</li>
+              <li>PS5</li>
+              <li>PS4</li>
+              <li>PSVR2</li>
+              <li>PS Plus</li>
+              <li>Games</li>
+            </ul>
+          </div>
+  
+          <div>
+            <ul>
+              <li style="font-weight: bold;">Values</li>
+              <li>Environment</li>
+              <li>Accessibilty</li>
+              <li>Online Safety</li>
+              <li>Diversity, equity and inclusion</li>
+            </ul>
+          </div>
+  
+          <div>
+            <ul>
+              <li style="font-weight: bold;">Support</li>
+              <li>Support Hub</li>
+              <li>PlayStation Safety</li>
+              <li>PSN Status</li>
+              <li>PlayStation Repairs</li>
+              <li>Password Reset</li>
+            </ul>
+          </div>
+  
+          <div>
+            <ul>
+              <li style="font-weight: bold;">Resources</li>
+              <li>PSN terms of service</li>
+              <li>PS Store cancellation policy</li>
+              <li>Age ratings</li>
+              <li>Health Warning</li>
+              <li>Developers</li>
+              <li>Glossary</li>
+            </ul>
+          </div>
+  
+          <div>
+            <ul>
+              <li style="font-weight: bold;">Connect</li>
+              <li>About SIE</li>
+              <li>IOS App</li>
+              <li>Android App</li>
+              
+            </ul>
+          </div>
+          
+        </div>
+  
+        <div style="border-bottom-width: 1px; border-bottom-color:white; border-bottom-style:solid ;">
+          <img src="images/Footer/SIE.svg" style="height:96px; padding:10px 0px;" >
+          <div>© 2023 Sony Interactive Entertainment Europe Limited (SIEE)</div>
+          <div>All content, games titles, trade names and/or trade dress, trademarks, artwork and associated imagery are trademarks and/or copyright material of their respective owners. All rights reserved. More info</div>
+        </div>
+      </div>
+      
+    </footer>
+ 
+  </body>
+</html>

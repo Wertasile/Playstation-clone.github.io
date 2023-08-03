@@ -1,0 +1,590 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+h3{
+    font-family: system-ui;
+    font-weight:lighter;
+    font-size: calc(1rem*1.95312);
+}
+
+h4{
+    font-family:"sst",Arial,sans-serif;
+    font-weight: 400;
+    font-size: calc(1rem*1.5625);
+}
+
+p{
+    font-family:"sst",Arial,sans-serif;
+    font-size: calc(1rem*1.25);
+    font-weight: 400;
+    opacity: .7;
+    line-height: 1.5em;
+
+}
+
+body {
+    
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+  }
+
+body{
+    margin:0;
+}
+
+a{
+    text-decoration: none;
+    color:inherit;
+}
+
+.nodisplay{
+    display:none;
+}
+
+#badges{
+    width:329px;
+    height:74px;
+}
+
+
+
+/*
+---FADE EFFECTS FOR IMAGE---------------------------------------------------------------------------------------------------- */
+
+.fade-in{
+    animation: fadeIn 5s;
+}
+
+@keyframes fadeIn{
+    0% {opacity:0}
+    100%{opacity:1}
+}
+
+/*
+---GRID CONTAINER---------------------------------------------------------------------------------------------------- */
+
+.gridcontainer{
+    display:grid;
+    grid-template-columns: 1fr 1.5fr;
+    padding:0px 200px;
+    
+    height:100%;
+    
+    column-gap: 2rem;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    
+}
+
+.gridcontainer img{
+    height:600px;
+    
+}
+
+/*
+--SELCETING IMAGES/SLIDES -----------------------------------------------------------------------------------------*/
+
+.pickimage{
+    display:grid;
+    grid-template-columns: 12vw 12vw 12vw 12vw 12vw 12vw;
+    column-gap: 10px;
+    justify-content: center;
+    justify-items: center;
+    padding-top: 20px;
+    border-radius: 25px;
+    padding-bottom: 20px;
+    
+
+    
+    
+}
+
+.pickimage img{
+    max-width: 178.281;
+    max-height: 100.281;
+    border-radius: 25px;
+    
+    opacity: 0.7;
+    object-fit: cover;
+    
+    
+    
+}
+
+.pickimageitem{
+    
+    align-self: bottom;
+    
+    
+}
+
+
+
+.pickimageitem:hover{
+    
+    border-color: #006FCD;
+    border-style:solid;
+    border-radius: 25px;
+    border-spacing:4px;
+}
+
+.pickimage img:hover{
+    opacity: 1;
+}
+
+/* 
+---SONY LOGO BAR---------------------------------------------------------------------------------------------------*/
+
+.sonylogo img{
+    width: 90px;
+    height: 36px;
+    float:right;
+    padding: 0px 5px;
+     
+}
+
+.sonylogobar{
+    background-color: black;
+    height:37px;
+}
+
+
+
+/*
+---NAVIGATION BAR------------------------------------------------------------------------------------------------------*/
+
+.nav-bar{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: SST,helvetica,arial,sans-serif;
+    font-weight: 500;
+    color: #1f1f1f;
+    align-items: flex-end;
+    padding-bottom: 20px;   
+    width: 100%;
+    background-color: white;
+    top: 0;
+    position:sticky;
+    z-index: 2;
+}
+
+
+.leftnavbar{
+    
+    padding-left: 10px;   
+}
+.leftnavbar img{
+    width:50px;
+    height: 41px;
+}
+
+.rightnavbar{ 
+    padding-right: 10px;  
+}
+
+/*
+---PLAYSTATION GAMES------------------------------------------------------------------------------------------------------*/
+.gameimage{
+    background-repeat:no-repeat;
+    background-size: contain;
+    height: 650px;
+}
+#ps5discount{
+    background-image: url("../images/firstslideshow/ps5-promotion-wave-2-homepage-hero-desktop-01-en-14jul23.webp"); 
+    
+    
+    
+    
+    
+}
+
+#spiderman div{ 
+    /* background-image: linear-gradient(to right, rgba(0,0,0,0.3), rgba(0,0,0,1)); */
+    background-image: radial-gradient(circle, rgba(0,0,0,0), rgba(0,0,0,1));
+    height:650px;
+    width: 100%;
+    /* transform: translateX(90%); */
+    position: relative;
+    z-index: 1;    
+}
+
+
+#winter{
+    background-image: url("../images/firstslideshow/summer-sale-keyart-01-10jul23$en-in.webp");
+    background-position: center;
+}
+
+#winter div{
+    background-image: radial-gradient(circle, rgba(0,0,0,0) , rgba(9,4,106,1) 65%);
+    height:650px;
+    width: 100%;
+    /* transform: translateX(90%); */
+    position: relative;
+    z-index: 1;
+}
+
+#great2023{
+    background-image: url("../images/firstslideshow/21-games-keyart-01-07jun23$en.webp");
+    background-position: right;
+}
+
+#great2023 div{
+    background-image: linear-gradient(to left, rgba(0,0,0,0) 30%, rgba(42,38,52,1) 65%);
+    height:650px;
+    position: relative;
+    z-index: 1;
+}
+
+#firewall{
+    background-image: url("../images/firstslideshow/firewall-ultra-digital-deluxe-keyart-01-14jul23$en.webp");  
+    background-position: right;
+}
+
+#firewall div{
+    
+    background-image: linear-gradient(to left, rgba(0,0,0,0) 30%, rgba(20,49,54,1) 65%);
+    height:650px;
+    position: relative;
+    z-index: 1;  
+    
+}
+
+
+#granturismo{
+    background-image: url("../images/firstslideshow/GranTurismo-DOM-Keyart-01-18jul23$en.webp"); 
+    background-position: right;
+}
+
+#venom{
+    background-image: url("../images/firstslideshow/spider-man-2-story-trailer-keyart-01-en-18jul23.webp");
+    background-position: right;
+}
+
+#venom div{
+    background-image: linear-gradient(to left, rgba(0,0,0,0) 40%, rgba(18,19,20,1) 65%);
+    position: relative;
+    z-index: 1;
+    height:650px;
+}
+
+#granturismo div{
+    background-image: linear-gradient(to left, rgba(0,0,0,0) 40%, rgba(18,19,20,1) 65%);
+    position: relative;
+    z-index: 1;
+    height:650px;
+}
+
+.material-symbols-outlined{
+    padding-right: 10px;
+}
+
+/*
+---ACCESSORIES------------------------------------------------------------------------------------------------------*/
+
+.accessories img{
+    max-width: 600px;
+    height:auto;
+}
+
+
+/*
+---PLAYSTATION PLUS------------------------------------------------------------------------------------------------------*/
+
+#psplus{
+    background-image: url(../images/playstationplusbg.webp);
+    background-position: right ; 
+    height:520px;
+    width:100%;
+}
+
+
+#psplus .gridcontainer{
+    height: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#psplusfeatured{
+    height:460px;
+}
+
+/*
+---PLAYSTATION VR2------------------------------------------------------------------------------------------------------*/
+
+#psvr2{
+    background-image: url(../images/psvr2-register-homepage-hero-desktop.webp);
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    
+    background-size:cover;
+}
+
+/*
+---THIS MONTH ON PLAYSTATION------------------------------------------------------------------------------------------------------*/
+
+#ff16{
+    background-image: url(../images/this-month-on-playstation-jun-homepage-background-desktop-.webp);
+    width: 100%;
+    height: 480px;
+    background-repeat: no-repeat;
+    
+    background-size:cover;
+}
+
+#ff16belowbg{
+    background-color: #26254f;
+    width: 100%;
+    height:210px;
+}
+
+.contentgrid{
+    display:inline-grid;
+    
+    grid-template-columns: 25vw 25vw 25vw;
+    width: 100%;
+    padding-top:50px;
+    
+    justify-content: center;  
+     
+
+}
+
+.contentgrid div{
+    padding:10px;
+}
+
+.contentgrid img{
+    width:100%;
+    height:auto;
+    max-height: 225px;
+    object-fit: cover;
+    border-radius: 25px;
+
+}
+
+.floating{
+    float:left;
+    padding-left: 200px;
+    width:50%
+    
+}
+
+/*
+---GOW RAGNAROK------------------------------------------------------------------------------------------------------*/
+
+#gow{
+    background-image: url(../images/god-of-war-ragnarok-hero-banner-desktop-02-en-07sep21.webp);
+    width: 100%;
+    height: 620px;
+    background-repeat: no-repeat;
+    
+    background-size:cover;
+}
+
+/*
+---AVAILABLE NOW------------------------------------------------------------------------------------------------------*/
+
+#availablenow{
+    background-color:rgb(18,19,20);
+    width: 100%;
+    height: 620px;
+    background-repeat: no-repeat;
+    
+    background-size:cover;
+}
+
+/*
+---GREAT PS4 & PS5 GAMES------------------------------------------------------------------------------------------------------*/
+
+.carousel{
+    display: inline-grid;
+    grid-template-columns: repeat(12,1fr);
+    padding:10px;
+    transform: translateX(0%);
+    margin: auto;
+    column-gap: 15px;      
+}
+
+.carousel-cell{
+    background-color: #212121;
+    padding:10px;
+    border-radius: 25px;
+}
+
+.carousel-cell img{
+    height:346px;
+    border-radius: 25px;
+}
+
+.arrows{
+   width: 24px;
+   height: 24px;
+   border-color: white;
+   position: absolute;
+   color:white;
+   margin-top: -320px;
+}
+
+.left{
+   border-bottom: 6px solid;
+   border-left: 6px solid;
+   transform: rotate(45deg);
+   left: 10px;
+}
+   
+.right{
+   border-bottom: 6px solid;
+   border-left: 6px solid;
+   transform: rotate(-135deg);
+   right: 10px;
+}
+
+/*
+---WHAT ARE YOU PLAYING?------------------------------------------------------------------------------------------------- */
+
+#whatplay{
+    background:rgb(245 247 250);
+}
+
+#whatplay picture:hover{
+    background-color: #212121;
+    opacity: 0.3;
+    
+}
+
+/*
+---EXPLORE PS4---------------------------------------------------------------------------------------------------------------*/
+
+#exploreps4{
+    display: grid;
+    grid-template-columns: 30vw 30vw 30vw;
+    
+    align-items: center; /* TO CENTRE GRID ITEMS (WITHIN COLUMN AXIS-Y)*/
+    justify-content: center; /* TO CENTRE GRID CONTAINER (WITHIN ROW AXIS-X)*/
+   
+
+}
+
+#exploreps4 img{   
+    width:100%;
+    height:auto;
+    max-height: 225px;
+    object-fit: cover;
+}
+
+#exploreps4 p{
+    padding: 10px;
+}
+
+/*
+---MERCHANDISE---------------------------------------------------------------------------------------------------------------*/
+#merchandise{
+    background-image:url(../images/Merchandise/ps-gear-evergreen-background.webp);
+    width:100%;
+    background-size: cover;
+}
+#merchandise #logoimg{
+    padding-top:10px;
+    max-width:96px;
+    max-height: 86px;
+}
+
+#merchandise #psgear{
+    display: grid;
+    grid-template-columns: 20vw 20vw 20vw 20vw;
+    justify-content: center;
+    
+    column-gap: 1.5rem;    
+
+}
+
+.gear{
+    background:rgba(0,0,0,.5);
+    padding:10px;
+    
+}
+
+#psgear{
+    font-size: 16px;
+    color:white;
+}
+
+#merchandise img{
+    max-width:129px;
+    max-height: 129px;
+}
+
+.button{
+    
+    padding:10px;
+    background: orangered;
+    color:white;
+    line-height: 2em;
+    font-weight: 600;
+    font-size: 14px;
+    width:100%;
+    border-radius: 2rem;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+/*
+---FOLLOW--------------------------------------------------------------------------------------------------------------------*/
+
+#follow{
+    background-color: rgb(245 247 250);
+}
+
+#follow div{
+    display: grid;
+    width:50%;
+    grid-template-columns:repeat(4,1fr);
+    column-gap: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20vh;
+    
+
+}
+
+#follow div img{
+    width:100%;
+    height:auto;
+    
+    object-fit: cover;
+}
+
+/*
+---FOOTER--------------------------------------------------------------------------------------------------------------------*/
+footer{
+    background: #00439c;
+}
+#footerid{
+    
+    color:white;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    padding:24px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.footergrid{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    height:auto;
+
+}
+
+#footerid{
+    list-style-type: none;
+    line-height: 1.5em;
+}
